@@ -54,6 +54,7 @@ class Alignment(object):
         self.count_jilm = {}
         self.count_ilm = {}
         
+        self.count_
         
         # delta
         self.delta = {}
