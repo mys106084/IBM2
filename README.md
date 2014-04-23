@@ -11,7 +11,7 @@
 
         2.1.2 ComputeT()
         
-        2.1.3 ComputeQ_IBM2() when s>=5, since there is no ComputeQ for IBM1
+        2.1.3 ComputeQ() when s>=5, since there is no ComputeQ for IBM1
         
     2.2 E-step:
     

@@ -459,8 +459,6 @@ class Alignment(object):
         # get alignments for dev
         self.alignments_dev = []
         for s in range(0,len(self.sentences_dev_e)):
-            if s%1000 == 0:
-                print "DEV- Alignments - Sentence:"+str(s)
             m = self.lengths_dev_f[s]
             l = self.lengths_dev_e[s]
             self.alignments_dev.append([])
@@ -480,6 +478,7 @@ class Alignment(object):
                     if tmp  >= maximum:
                         self.alignments_dev[s][i] = j
                         maximum = tmp
+        print "DEV- Alignments - Sentence:"+str(s)
         fout = open(self.url_dev_out,'w')
         for s in range(0,len(self.sentences_dev_e)):
             for i in range(0,len(self.alignments_dev[s])):
